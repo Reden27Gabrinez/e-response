@@ -1,12 +1,16 @@
 <?php
     include("configuration/config.php");
+    include("configuration/firebaseRDB.php");
 
-    if(!isset($_SESSION['user']))
-    {
-        header("location: login.php");
-    }
-    else
-    {
+    $db = new firebaseRDB($databaseURL);
+    // include("configuration/config.php");
+
+    // if(!isset($_SESSION['user']))
+    // {
+    //     header("location: login.php");
+    // }
+    // else
+    // {
 
 ?>
 <!DOCTYPE html>
@@ -52,5 +56,5 @@
 </bodyv>
 </html>
 <?php 
-    }
+    // }
 ?>
