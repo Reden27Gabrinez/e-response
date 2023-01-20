@@ -3,7 +3,7 @@
 <title>E-Response | Dashboard</title>
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="assets/images/favicon.ico" />
+<link rel="shortcut icon" href="assets/logo/Icon.png" />
 
 <!-- Library / Plugin Css Build -->
 <link rel="stylesheet" href="assets/css/core/libs.min.css" />
