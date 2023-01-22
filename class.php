@@ -1,4 +1,5 @@
 <?php
+
 include("configuration/config.php");
 include("configuration/firebaseRDB.php");
 
@@ -33,3 +34,6 @@ if(isset($_POST['add']))
      ]);
      header('location:index.php?page=hotlines');
 }
+
+
+?>
