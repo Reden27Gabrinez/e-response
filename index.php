@@ -4,14 +4,15 @@ error_reporting(0);
     include("configuration/firebaseRDB.php");
 
     $db = new firebaseRDB($databaseURL);
-    // include("configuration/config.php");
 
-    // if(!isset($_SESSION['user']))
-    // {
-    //     header("location: login.php");
-    // }
-    // else
-    // {
+
+
+    if(!isset($_SESSION['admin']))
+    {
+        header("location: login.php");
+    }
+    else
+    {
 
 ?>
 <!DOCTYPE html>
@@ -57,5 +58,5 @@ error_reporting(0);
 </bodyv>
 </html>
 <?php 
-    // }
+    }
 ?>
