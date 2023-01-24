@@ -14,5 +14,6 @@
     "lng"      => $_POST['long'],
     "team"    => $_POST['responder']
     ]);
-
+    $_SESSION['response']="Successfully Updated!";
+	$_SESSION['res_type']="warning";
     header('location:index.php?page=hotlines');

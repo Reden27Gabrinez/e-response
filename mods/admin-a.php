@@ -13,25 +13,25 @@
                     <div class="col-lg-6">
                     <div class="form-group">
                         <label for="full-name" class="form-label">Full Name</label>
-                        <input type="text" name="name" class="form-control" id="full-name" placeholder=" ">
+                        <input required type="text" name="name" class="form-control" id="full-name" placeholder=" ">
                     </div>
                     </div>
                     <div class="col-lg-6">
                     <div class="form-group">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" name="password" class="form-control" id="password" placeholder=" ">
+                        <input required type="password" name="password" class="form-control" id="password" placeholder=" ">
                     </div>
                     </div>
                     <div class="col-lg-6">
                     <div class="form-group">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" name="email" class="form-control" id="email" placeholder=" ">
+                        <input required type="email" name="email" class="form-control" id="email" placeholder=" ">
                     </div>
                     </div>
                     <div class="col-lg-6">
                     <div class="form-group">
                         <label for="phone" class="form-label">Phone No.</label>
-                        <input type="text" name="phone" class="form-control" id="phone" placeholder=" ">
+                        <input required type="text" name="phone" class="form-control" id="phone" placeholder=" ">
                     </div>
                     </div>      
       </div>

@@ -24,7 +24,9 @@
 
         if(count($data) > 0)
         {
-            echo "Email already used";
+            $_SESSION['response']="Email already used!";
+	        $_SESSION['res_type']="danger";
+            header('location:index.php?page=admin'); 
         }
         else
         {

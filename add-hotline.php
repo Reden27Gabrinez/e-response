@@ -13,19 +13,19 @@
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label class="form-label" for="fname">Responder:</label>
-                                <input type="text" class="form-control" id="responder" name="responder" placeholder="Responder">
+                                <input required type="text" class="form-control" id="responder" name="responder" placeholder="Responder">
                             </div>
                             <div class="form-group col-md-6">
                                 <label class="form-label" for="lname">Mobile Number:</label>
-                                <input type="number" class="form-control" id="number" name="number" placeholder="Mobile Number">
+                                <input required type="number" class="form-control" id="number" name="number" placeholder="Mobile Number">
                             </div>
                             <div class="form-group col-md-6">
                                 <label class="form-label" for="add1">Latitude:</label>
-                                <input type="text" class="form-control" id="lat" name="lat" placeholder="Latitude">
+                                <input required type="text" class="form-control" id="lat" name="lat" placeholder="Latitude">
                             </div>
                             <div class="form-group col-md-6">
                                 <label class="form-label" for="add2">Longitude:</label>
-                                <input type="text" class="form-control" id="long" name="long" placeholder="Longitude">
+                                <input required type="text" class="form-control" id="long" name="long" placeholder="Longitude">
                             </div>
                         </div>
                         <hr>
