@@ -7,6 +7,21 @@
                   <h4 class="card-title">Hotlines</h4>
                </div>
             </div>
+
+            <div class="container mt-2">
+                <?php 
+                    if(isset($_SESSION['response'])) 
+                    { 
+                ?>
+                <div class="alert alert-<?= $_SESSION['res_type']; ?> alert-dismissible text-center">            
+                <b><?= $_SESSION['response']; ?></b>
+                </div>
+                <?php 
+                    } 
+                    unset($_SESSION['response']); 
+                ?>
+            </div>
+
             <div class="card-body px-0">
                <div class="table-responsive">
                   <table id="user-list-table" class="table table-striped" role="grid" data-toggle="data-table">
