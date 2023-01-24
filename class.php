@@ -24,6 +24,15 @@ if(isset($_GET['id2']))
     }
 }
 
+if(isset($_GET['id3']))
+{
+    $id = $_GET['id3'];
+    if($id != ""){
+    $delete = $db->delete("admin", $id);
+    header('location:index.php?page=admin');
+    }
+}
+
 if(isset($_POST['add']))
 {
     $insert = $db->insert("hotlines", [
