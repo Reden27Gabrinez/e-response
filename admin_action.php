@@ -5,6 +5,7 @@
 
     $name      = $_POST['name'];
     $email      = $_POST['email'];
+    $phone      = $_POST['phone'];
     $password   = $_POST['password'];
 
     if($email == "")
@@ -30,6 +31,7 @@
             $insert = $rdb->insert("/admin", [
                 "name" => $name,
                 "email" => $email,
+                "phone" => $phone,
                 "password" => $password
             ]);
 
@@ -37,12 +39,12 @@
             if(isset($result['name']))
             {
                 echo "Signup success, please login";
-                header('location:login.php'); 
+                header('location:index.php?page=admin'); 
             }
             else
             {
                 echo "Signup failed";
-                header('location:sign-up.php'); 
+                header('location:index.php?page=admin'); 
             }  
         }
     }
