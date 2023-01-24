@@ -3,6 +3,7 @@
     include("configuration/config.php");
     include("configuration/firebaseRDB.php");
 
+    $name      = $_POST['name'];
     $email      = $_POST['email'];
     $password   = $_POST['password'];
 
@@ -20,22 +21,28 @@
         $retrieve = $rdb->retrieve("/admin", "email", "EQUAL", $email);
         $data = json_decode($retrieve, 1);
 
-        if(count($data) == 0)
+        if(count($data) > 0)
         {
-            echo "Email not registered";
+            echo "Email already used";
         }
         else
         {
-            
-            $id = array_keys($data)[0];
-            if($data[$id]['password'] == $password)
+            $insert = $rdb->insert("/admin", [
+                "name" => $name,
+                "email" => $email,
+                "password" => $password
+            ]);
+
+            $result = json_decode($insert, 1);
+            if(isset($result['name']))
             {
-                $_SESSION['admin'] = $data[$id];
-                header('location:index.php?page=dashboard');
+                echo "Signup success, please login";
+                header('location:login.php'); 
             }
             else
             {
-                header('location:login.php'); 
-            }
+                echo "Signup failed";
+                header('location:sign-up.php'); 
+            }  
         }
     }

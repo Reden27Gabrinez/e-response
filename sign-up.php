@@ -59,12 +59,12 @@
                            </a>
                            <h2 class="mb-2 text-center">Sign Up</h2>
                            <p class="text-center">Create your Hope UI account.</p>
-                           <form>
+                           <form method="POST" action="sign_up_action.php">
                               <div class="row">
                                  <div class="col-lg-6">
                                     <div class="form-group">
                                        <label for="full-name" class="form-label">Full Name</label>
-                                       <input type="text" class="form-control" id="full-name" placeholder=" ">
+                                       <input type="text" name="name" class="form-control" id="full-name" placeholder=" ">
                                     </div>
                                  </div>
                                  <div class="col-lg-6">
@@ -76,7 +76,7 @@
                                  <div class="col-lg-6">
                                     <div class="form-group">
                                        <label for="email" class="form-label">Email</label>
-                                       <input type="email" class="form-control" id="email" placeholder=" ">
+                                       <input type="email" name="email" class="form-control" id="email" placeholder=" ">
                                     </div>
                                  </div>
                                  <div class="col-lg-6">
@@ -88,18 +88,12 @@
                                  <div class="col-lg-6">
                                     <div class="form-group">
                                        <label for="password" class="form-label">Password</label>
-                                       <input type="password" class="form-control" id="password" placeholder=" ">
-                                    </div>
-                                 </div>
-                                 <div class="col-lg-6">
-                                    <div class="form-group">
-                                       <label for="confirm-password" class="form-label">Confirm Password</label>
-                                       <input type="text" class="form-control" id="confirm-password" placeholder=" ">
+                                       <input type="password" name="password" class="form-control" id="password" placeholder=" ">
                                     </div>
                                  </div>
                                  <div class="col-lg-12 d-flex justify-content-center">
                                     <div class="form-check mb-3">
-                                       <input type="checkbox" class="form-check-input" id="customCheck1">
+                                       <input type="checkbox" required class="form-check-input" id="customCheck1">
                                        <label class="form-check-label" for="customCheck1">I agree with the terms of use</label>
                                     </div>
                                  </div>
