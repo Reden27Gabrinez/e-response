@@ -25,3 +25,17 @@
 
 <!-- RTL Css -->
 <link rel="stylesheet" href="assets/css/rtl.min.css"/>
+
+<style>
+.zoom {
+  text-align: center;
+  transition: transform 1s; /* Animation */
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
