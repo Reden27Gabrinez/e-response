@@ -53,7 +53,10 @@
                         </div>
                      </div>
                   </div>
-               </div>
+               </div>    
+                  <div class="d-flex justify-content-center mt-5">
+                     <a href="assets/app/app-release.apk" download class="btn btn-info text-center">You can Download the Mobile App Here!</a>
+                  </div>        
                <!-- <div class="sign-bg">
                   <svg width="280" height="230" viewBox="0 0 431 398" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <g opacity="0.05">
